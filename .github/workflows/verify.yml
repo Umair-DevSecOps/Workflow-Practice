@@ -17,10 +17,6 @@ jobs:
       - name: Install Power Platform CLI
         uses: microsoft/powerplatform-actions/actions-install@v1
 
-      - name: Run simple verification step
-        run: |
-          echo "Verification workflow is running"
-
       - name: Run Power Platform Solution Checker
         run: |
           echo "Starting solution check"
