@@ -14,10 +14,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Power Platform CLI
-        uses: microsoft/powerplatform-actions/actions-install@v1
-        with:
-          pac-version: latest
+      - name: Install Power Platform CLI manually
+        run: |
+          npm install -g pac-cli
+          pac --version
 
       - name: Check pac CLI
         run: pac --version
