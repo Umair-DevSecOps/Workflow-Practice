@@ -22,4 +22,6 @@ jobs:
 
       - name: Run Power Platform Solution Checker
         run: |
-          pac solution check --path solution/solution.zip
+          echo "Starting solution check"
+          pac solution check --path Example-Sol/Example-Sol.zip
+          echo "Finished"
